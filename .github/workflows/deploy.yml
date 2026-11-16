@@ -30,6 +30,6 @@ jobs:
               TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
               SECRET_PORT: ${{ vars.SECRET_PORT }}
            run: |
-              docker-compose down || true
-              docker-compose build
-              docker-compose up -d
+              docker compose down || true
+              docker compose build
+              docker compose up -d
